@@ -7,6 +7,10 @@ import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 import { Paper } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+
+import MailIcon from '@material-ui/icons/Mail';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -23,6 +27,15 @@ const useStyles = makeStyles((theme) => ({
         width: "8em",
         height: "100%",
         margin: "0 auto",
+    },
+    info: {
+        boxSizing: "border-box",
+        padding: "0.4em",
+    },
+    iconInfo: {
+        display: "flex",
+        alignItems: "center",
+        flexWrap: "wrap",
     }
 }));
 
@@ -46,7 +59,31 @@ export default function FirstCol(props) {
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Paper elevation={2}>
+                    <Paper elevation={2} className={classes.info}>
+                        <Typography variant="h6" component="h6">
+                            Liên hệ
+                        </Typography>
+                        <Typography className={classes.iconInfo}>
+                            <Button href="mailto:nvatuan3@gmail.com" className={classes.iconInfo}>
+                                <MailIcon />
+                            </Button>
+                            <span style={{ marginLeft: "0.5em" }} className={classes.iconInfo}>
+                                nvatuan3@gmail.com
+                            </span>
+                        </Typography>
+                        <Typography className={classes.iconInfo}>
+                            <Button href="https://www.facebook.com/tuanio1211/" className={classes.iconInfo} target="_blank">
+                                <FacebookIcon />
+                            </Button>
+                            <span style={{ marginLeft: "0.5em" }} className={classes.iconInfo}>
+                                Tuấn Nguyễn
+                            </span>
+                        </Typography>
+                    </Paper>
+                </Grid>
+
+                <Grid item xs={12}>
+                    <Paper elevation={2} className={classes.info}>
                         <Typography variant="h6" component="h6">
                             Học vấn
                         </Typography>

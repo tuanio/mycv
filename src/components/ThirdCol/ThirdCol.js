@@ -5,8 +5,6 @@ import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Paper, Typography } from "@material-ui/core";
 
-import GitHubIcon from '@material-ui/icons/GitHub';
-
 import Github from "../../assets/github.png";
 import Kaggle from "../../assets/kaggle.png";
 import Codeforces from "../../assets/codeforces.png";
@@ -16,6 +14,8 @@ const useStyles = makeStyles((theme) => ({
         width: "100%",
         margin: "0 auto",
         padding: "20px 0",
+        boxSizing: "border-box",
+        padding: "0.4em"
     },
     linkIcon: {
         width: "5em",
@@ -45,19 +45,19 @@ export default function ThirdCol(props) {
                         
                         <Grid item xs={4} alignContent="center">
                             <Button href="https://github.com/tuanio" target="_blank">
-                                <img src={Github} className={classes.linkIcon} />
+                                <img alt="github" src={Github} className={classes.linkIcon} />
                             </Button>
                         </Grid>
                         
                         <Grid item xs={4} alignContent="center">
                             <Button href="https://www.kaggle.com/tuannguyenvananh" target="_blank">
-                                <img src={Kaggle} className={classes.linkIcon} />
+                                <img alt="kaggle" src={Kaggle} className={classes.linkIcon} />
                             </Button>
                         </Grid>
 
                         <Grid item xs={4} alignContent="center">
                             <Button href="https://codeforces.com/profile/tuanio" target="_blank">
-                                <img src={Codeforces} className={classes.linkIcon} />
+                                <img alt="codeforces" src={Codeforces} className={classes.linkIcon} />
                             </Button>
                         </Grid>
                         
