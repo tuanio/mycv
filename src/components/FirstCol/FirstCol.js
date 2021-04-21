@@ -63,21 +63,23 @@ export default function FirstCol(props) {
                         <Typography variant="h6" component="h6">
                             Liên hệ
                         </Typography>
-                        <Typography className={classes.iconInfo}>
-                            <Button href="mailto:nvatuan3@gmail.com" className={classes.iconInfo}>
-                                <MailIcon />
-                            </Button>
-                            <span style={{ marginLeft: "0.5em" }} className={classes.iconInfo}>
-                                nvatuan3@gmail.com
-                            </span>
-                        </Typography>
-                        <Typography className={classes.iconInfo}>
-                            <Button href="https://www.facebook.com/tuanio1211/" className={classes.iconInfo} target="_blank">
-                                <FacebookIcon />
-                            </Button>
-                            <span style={{ marginLeft: "0.5em" }} className={classes.iconInfo}>
-                                Tuấn Nguyễn
-                            </span>
+                        <Typography className={classes.info}>
+                            <Typography className={classes.iconInfo}>
+                                <Button href="mailto:nvatuan3@gmail.com" className={classes.iconInfo} color="secondary">
+                                    <MailIcon />
+                                </Button>
+                                <span style={{ marginLeft: "0.5em" }} className={classes.iconInfo}>
+                                    nvatuan3@gmail.com
+                                </span>
+                            </Typography>
+                            <Typography className={classes.iconInfo}>
+                                <Button href="https://www.facebook.com/tuanio1211/" className={classes.iconInfo} target="_blank" color="primary">
+                                    <FacebookIcon />
+                                </Button>
+                                <span style={{ marginLeft: "0.5em" }} className={classes.iconInfo}>
+                                    Tuấn Nguyễn
+                                </span>
+                            </Typography>
                         </Typography>
                     </Paper>
                 </Grid>
@@ -86,6 +88,19 @@ export default function FirstCol(props) {
                     <Paper elevation={2} className={classes.info}>
                         <Typography variant="h6" component="h6">
                             Học vấn
+                        </Typography>
+                        
+                        <Typography className={classes.info}>
+                        
+                            <Typography>
+                                <Typography style={{ fontWeight: "bold", fontSize: "smaller" }}>
+                                    <em>8/2019 - Hiện tại</em>
+                                </Typography>
+                                <Typography style={{ fontSize: "0.9em"}}>
+                                    Khoa Học Dữ Liệu / Đại học Công Nghiệp Thành phố Hồ Chí Minh
+                                </Typography>                
+                            </Typography>       
+
                         </Typography>
                     </Paper>
                 </Grid>
