@@ -9,6 +9,12 @@ import Github from "../../assets/github.png";
 import Kaggle from "../../assets/kaggle.png";
 import Codeforces from "../../assets/codeforces.png";
 
+import ColorLensOutlinedIcon from '@material-ui/icons/ColorLensOutlined';
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
+import VerifiedUserOutlinedIcon from '@material-ui/icons/VerifiedUserOutlined';
+import GroupOutlinedIcon from '@material-ui/icons/GroupOutlined';
+
+
 const useStyles = makeStyles((theme) => ({
     root: {
         width: "100%",
@@ -26,7 +32,12 @@ const useStyles = makeStyles((theme) => ({
     info: {
         boxSizing: "border-box",
         padding: "0.4em",
-    }
+    },
+    iconInfo: {
+        display: "flex",
+        alignItems: "center",
+        flexWrap: "wrap",
+    },
 }));
 
 export default function ThirdCol(props) {
@@ -42,10 +53,11 @@ export default function ThirdCol(props) {
                     <Paper className={classes.root} elevation={2}>
                         <Grid container>
                             <Grid item xs={11} style={{ margin: "10px auto", width: "100%" }}>
-                                <Typography variant="h6" component="h6">
-                                    Một chút về tôi
+                                <Typography variant="h6" component="h6" className={classes.iconInfo}>
+                                    <PermIdentityIcon />
+                                    <span style={{ marginLeft: 5 }}>Một chút về tôi</span>
                                 </Typography>
-                                <Typography variant="p" component="p">
+                                <Typography variant="p" component="p" className={classes.info}>
                                     Tôi có ước mơ là một ngày nào đó sẽ trở thành một nhà khoa học dữ liệu. Đem dữ liệu đến thông tin cho tất cả mọi người.
                                 </Typography>
                             </Grid>
@@ -77,8 +89,9 @@ export default function ThirdCol(props) {
 
                 <Grid item xs={12}>
                     <Paper elevation={2} className={classes.root} className={classes.info}>
-                        <Typography variant="h6" component="h6">
-                            Chứng chỉ
+                        <Typography variant="h6" component="h6" className={classes.iconInfo}>
+                            <VerifiedUserOutlinedIcon />
+                            <span style={{ marginLeft: 5 }}>Chứng chỉ</span>
                         </Typography>
 
                         <Typography className={classes.info}>
@@ -98,8 +111,9 @@ export default function ThirdCol(props) {
 
                 <Grid item xs={12}>
                     <Paper elevation={2} className={classes.root} className={classes.info}>
-                        <Typography variant="h6" component="h6">
-                            Kỹ năng
+                        <Typography variant="h6" component="h6" className={classes.iconInfo}>
+                            <ColorLensOutlinedIcon />
+                            <span style={{ marginLeft: 5 }}>Kỹ năng</span>
                         </Typography>
 
                         <Typography className={classes.info}>

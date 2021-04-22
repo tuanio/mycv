@@ -11,6 +11,9 @@ import Button from "@material-ui/core/Button";
 
 import MailIcon from '@material-ui/icons/Mail';
 import FacebookIcon from '@material-ui/icons/Facebook';
+import PermContactCalendarOutlinedIcon from '@material-ui/icons/PermContactCalendarOutlined';
+import MenuBookOutlinedIcon from '@material-ui/icons/MenuBookOutlined';
+import SentimentVerySatisfiedOutlinedIcon from '@material-ui/icons/SentimentVerySatisfiedOutlined';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -36,11 +39,20 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         alignItems: "center",
         flexWrap: "wrap",
+    },
+    infoTime: {
+        fontWeight: "bold",
+        fontSize: "smaller",
+        fontStyle: "italic"
+    },
+    infoDescribe: {
+        fontSize: "0.9em"
     }
 }));
 
 export default function FirstCol(props) {
     const classes = useStyles();
+    const [joyList, setJoyList] = useState(['Bơi lội', 'Đọc sách'])
 
     return (
         <>
@@ -60,8 +72,9 @@ export default function FirstCol(props) {
 
                 <Grid item xs={12}>
                     <Paper elevation={2} className={classes.info}>
-                        <Typography variant="h6" component="h6">
-                            Liên hệ
+                        <Typography variant="h6" component="h6" className={classes.iconInfo}>
+                            <PermContactCalendarOutlinedIcon />
+                            <span style={{ marginLeft: 5 }}>Liên hệ</span>
                         </Typography>
                         <Typography className={classes.info}>
                             <Typography className={classes.iconInfo}>
@@ -86,22 +99,47 @@ export default function FirstCol(props) {
 
                 <Grid item xs={12}>
                     <Paper elevation={2} className={classes.info}>
-                        <Typography variant="h6" component="h6">
-                            Học vấn
+                        <Typography variant="h6" component="h6" className={classes.iconInfo}>
+                            <MenuBookOutlinedIcon />
+                            <span style={{ marginLeft: 5 }}>Học vấn</span>
                         </Typography>
                         
                         <Typography className={classes.info}>
                         
                             <Typography>
-                                <Typography style={{ fontWeight: "bold", fontSize: "smaller" }}>
-                                    <em>8/2019 - Hiện tại</em>
+                                <Typography className={classes.infoTime}>
+                                    8/2019 - Hiện tại
                                 </Typography>
-                                <Typography style={{ fontSize: "0.9em"}}>
+                                <Typography className={classes.infoDescribe}>
                                     Khoa Học Dữ Liệu / Đại học Công Nghiệp Thành phố Hồ Chí Minh
                                 </Typography>                
                             </Typography>       
 
                         </Typography>
+                    </Paper>
+                </Grid>
+
+                <Grid item xs={12}>
+                    <Paper elevation={2} className={classes.info}>
+                        <Typography variant="h6" component="h6" className={classes.iconInfo}>
+                            <SentimentVerySatisfiedOutlinedIcon />
+                            <span style={{ marginLeft: 5 }}>Sở thích</span>
+                        </Typography>
+                        
+                        <Typography className={classes.info}>
+                            <Grid container spacing={1}>
+                                {
+                                    joyList.map((item) => (
+                                        <Grid item style={{ textAlign: "center" }} key={item}>
+                                            <Paper elevation={2} style={{ boxSizing: "border-box", padding: "2px 5px" }}>
+                                                {item}
+                                            </Paper>
+                                        </Grid>
+                                    ))
+                                }
+                            </Grid>
+                        </Typography>    
+
                     </Paper>
                 </Grid>
             </Grid>
