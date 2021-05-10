@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import Me from "../../assets/me.jpg";
 
@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
 export default function FirstCol(props) {
     const classes = useStyles();
     const [joyList, setJoyList] = useState(['Bơi lội', 'Đọc sách'])
+    setJoyList(['Bơi lội', 'Đọc sách']);
 
     return (
         <>

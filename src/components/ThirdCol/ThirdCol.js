@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import Grid from "@material-ui/core/Grid";
-import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Paper, Typography } from "@material-ui/core";
 
@@ -12,7 +11,6 @@ import Codeforces from "../../assets/codeforces.png";
 import ColorLensOutlinedIcon from '@material-ui/icons/ColorLensOutlined';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import VerifiedUserOutlinedIcon from '@material-ui/icons/VerifiedUserOutlined';
-import GroupOutlinedIcon from '@material-ui/icons/GroupOutlined';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
         margin: "0 auto",
         padding: "20px 0",
         boxSizing: "border-box",
-        padding: "0.4em"
     },
     linkIcon: {
         width: "5em",
@@ -45,6 +42,7 @@ export default function ThirdCol(props) {
     const [skillList, setSkillList] = useState([
         'C/C++', 'Python', 'SQL', 'Flask', 'PostgreSQL', 'Trực quan hóa'
     ])
+    setSkillList(['C/C++', 'Python', 'SQL', 'Flask', 'PostgreSQL', 'Trực quan hóa']);
 
     return (
         <>
@@ -88,7 +86,7 @@ export default function ThirdCol(props) {
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Paper elevation={2} className={classes.root} className={classes.info}>
+                    <Paper elevation={2} className={classes.root} >
                         <Typography variant="h6" component="h6" className={classes.iconInfo}>
                             <VerifiedUserOutlinedIcon />
                             <span style={{ marginLeft: 5 }}>Chứng chỉ</span>
@@ -110,7 +108,7 @@ export default function ThirdCol(props) {
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Paper elevation={2} className={classes.root} className={classes.info}>
+                    <Paper elevation={2} className={classes.root}>
                         <Typography variant="h6" component="h6" className={classes.iconInfo}>
                             <ColorLensOutlinedIcon />
                             <span style={{ marginLeft: 5 }}>Kỹ năng</span>

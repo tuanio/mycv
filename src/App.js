@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 
 import './App.css';
-import DataSource from "./data/data.json";
+// import DataSource from "./data/data.json";
 
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";

@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 
-import Grid from "@material-ui/core/Grid";
-import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 import { Paper } from "@material-ui/core";
 
