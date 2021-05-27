@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 import Grid from "@material-ui/core/Grid";
+// import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Paper, Typography } from "@material-ui/core";
 
@@ -11,14 +12,17 @@ import Codeforces from "../../assets/codeforces.png";
 import ColorLensOutlinedIcon from '@material-ui/icons/ColorLensOutlined';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import VerifiedUserOutlinedIcon from '@material-ui/icons/VerifiedUserOutlined';
+import clsx from 'clsx';
+// import GroupOutlinedIcon from '@material-ui/icons/GroupOutlined';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
         width: "100%",
         margin: "0 auto",
-        padding: "20px 0",
+        // padding: "20px 0",
         boxSizing: "border-box",
+        padding: "0.4em"
     },
     linkIcon: {
         width: "5em",
@@ -39,18 +43,15 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ThirdCol(props) {
     const classes = useStyles();
-    const [skillList, setSkillList] = useState([
-        'C/C++', 'Python', 'SQL', 'Flask', 'PostgreSQL', 'Trực quan hóa'
-    ])
-    setSkillList(['C/C++', 'Python', 'SQL', 'Flask', 'PostgreSQL', 'Trực quan hóa']);
+    const skillList = ['C/C++', 'Python', 'SQL', 'Flask', 'PostgreSQL', 'Trực quan hóa']
 
     return (
         <>
             <Grid container spacing={2}>
-                <Grid item xs={12}>
+                <Grid item md={12} xs={12}>
                     <Paper className={classes.root} elevation={2}>
                         <Grid container>
-                            <Grid item xs={11} style={{ margin: "10px auto", width: "100%" }}>
+                            <Grid item md={11} xs={12} style={{ margin: "10px auto", width: "100%" }}>
                                 <Typography variant="h6" component="h6" className={classes.iconInfo}>
                                     <PermIdentityIcon />
                                     <span style={{ marginLeft: 5 }}>Một chút về tôi</span>
@@ -62,19 +63,19 @@ export default function ThirdCol(props) {
 
                             <Grid container spacing={1} alignContent="center">
                                 
-                                <Grid item xs={4} alignContent="center">
+                                <Grid item md={4} xs={4}>
                                     <Button href="https://github.com/tuanio" target="_blank">
                                         <img alt="github" src={Github} className={classes.linkIcon} />
                                     </Button>
                                 </Grid>
                                 
-                                <Grid item xs={4} alignContent="center">
+                                <Grid item md={4} xs={4}>
                                     <Button href="https://www.kaggle.com/tuannguyenvananh" target="_blank">
                                         <img alt="kaggle" src={Kaggle} className={classes.linkIcon} />
                                     </Button>
                                 </Grid>
 
-                                <Grid item xs={4} alignContent="center">
+                                <Grid item md={4} xs={4}>
                                     <Button href="https://codeforces.com/profile/tuanio" target="_blank">
                                         <img alt="codeforces" src={Codeforces} className={classes.linkIcon} />
                                     </Button>
@@ -85,8 +86,8 @@ export default function ThirdCol(props) {
                     </Paper>
                 </Grid>
 
-                <Grid item xs={12}>
-                    <Paper elevation={2} className={classes.root} >
+                <Grid item md={12} xs={12}>
+                    <Paper elevation={2} className={clsx(classes.root, classes.info)}>
                         <Typography variant="h6" component="h6" className={classes.iconInfo}>
                             <VerifiedUserOutlinedIcon />
                             <span style={{ marginLeft: 5 }}>Chứng chỉ</span>
@@ -107,8 +108,8 @@ export default function ThirdCol(props) {
                     </Paper>
                 </Grid>
 
-                <Grid item xs={12}>
-                    <Paper elevation={2} className={classes.root}>
+                <Grid item md={12}>
+                    <Paper elevation={2} className={clsx(classes.root, classes.info)}>
                         <Typography variant="h6" component="h6" className={classes.iconInfo}>
                             <ColorLensOutlinedIcon />
                             <span style={{ marginLeft: 5 }}>Kỹ năng</span>

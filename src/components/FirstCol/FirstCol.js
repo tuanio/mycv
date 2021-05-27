@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 import Me from "../../assets/me.jpg";
 
@@ -52,16 +52,16 @@ const useStyles = makeStyles((theme) => ({
 
 export default function FirstCol(props) {
     const classes = useStyles();
-    const [joyList, setJoyList] = useState(['Bơi lội', 'Đọc sách'])
-    setJoyList(['Bơi lội', 'Đọc sách']);
+    const joyList = ['Bơi lội', 'Chạy bộ', 'Nghe nhạc', 'Đọc sách']
 
     return (
         <>
             <Grid container spacing={2} direction="column">
                 
-                <Grid item xs={12}>
+                <Grid item md={12} xs={12}>
                     <Paper elevation={2} className={classes.root}>
                         <Avatar alt="Tuan" src={Me} className={classes.avatar} />
+                        {/* <Avatar alt="Tuan" className={classes.avatar} /> */}
                         <Typography variant="h6" component="h6" className={classes.avatarName}>
                             Nguyễn Văn Anh Tuấn
                         </Typography>
@@ -71,7 +71,7 @@ export default function FirstCol(props) {
                     </Paper>
                 </Grid>
 
-                <Grid item xs={12}>
+                <Grid item md={12} xs={12}>
                     <Paper elevation={2} className={classes.info}>
                         <Typography variant="h6" component="h6" className={classes.iconInfo}>
                             <PermContactCalendarOutlinedIcon />
@@ -98,7 +98,7 @@ export default function FirstCol(props) {
                     </Paper>
                 </Grid>
 
-                <Grid item xs={12}>
+                <Grid item md={12} xs={12}>
                     <Paper elevation={2} className={classes.info}>
                         <Typography variant="h6" component="h6" className={classes.iconInfo}>
                             <MenuBookOutlinedIcon />
@@ -120,7 +120,7 @@ export default function FirstCol(props) {
                     </Paper>
                 </Grid>
 
-                <Grid item xs={12}>
+                <Grid item md={12} xs={12}>
                     <Paper elevation={2} className={classes.info}>
                         <Typography variant="h6" component="h6" className={classes.iconInfo}>
                             <SentimentVerySatisfiedOutlinedIcon />
@@ -140,7 +140,6 @@ export default function FirstCol(props) {
                                 }
                             </Grid>
                         </Typography>    
-
                     </Paper>
                 </Grid>
             </Grid>

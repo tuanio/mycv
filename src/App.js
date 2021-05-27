@@ -35,15 +35,15 @@ function App() {
             <Grid container spacing={2} direction="column">
                 <Grid item>
                     <Grid container spacing={2}>
-                        <Grid item xs={3} className={classes.firstCol}>
+                        <Grid item md={3} xs={12} className={classes.firstCol}>
                             <FirstCol />
                         </Grid>
                         
-                        <Grid item xs={6} className={classes.secondCol}>
+                        <Grid item md={6} xs={12} className={classes.secondCol}>
                             <SecondCol />
                         </Grid>
 
-                        <Grid item xs={3} className={classes.thirdCol}>
+                        <Grid item md={3} xs={12} className={classes.thirdCol}>
                             <ThirdCol />
                         </Grid>
                     </Grid>
