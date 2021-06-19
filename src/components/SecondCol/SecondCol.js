@@ -8,6 +8,7 @@ import Button from "@material-ui/core/Button";
 import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
 import FitnessCenterOutlinedIcon from '@material-ui/icons/FitnessCenterOutlined';
 import SportsKabaddiOutlinedIcon from '@material-ui/icons/SportsKabaddiOutlined';
+import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -38,6 +39,25 @@ export default function SecondCol(props) {
     return (
         <>
             <Paper elevation={2} className={classes.root}>
+                <Typography>
+                    <Typography variant="h6" component="h6" className={classes.iconInfo}>
+                        <WorkOutlineIcon />
+                        <span style={{ marginLeft: 5 }}>Công việc</span>
+                    </Typography>
+                    <Typography className={classes.root}>
+
+                        <Typography className={classes.infoGeneral}>
+                            <Typography className={classes.infoTime}>
+                                5/2021 - Hiện tại
+                            </Typography>
+                            <Typography>
+                                Thực tập với vị trí Data Engineer tại Weai
+                            </Typography>
+                        </Typography>
+
+                    </Typography>
+                </Typography>
+
                 <Typography>
                     <Typography variant="h6" component="h6" className={classes.iconInfo}>
                         <EmojiEventsOutlinedIcon />

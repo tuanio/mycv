@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ThirdCol(props) {
     const classes = useStyles();
-    const skillList = ['C/C++', 'Python', 'SQL', 'Flask', 'PostgreSQL', 'Trực quan hóa']
+    const skillList = ['C/C++', 'Python', 'SQL', 'Flask', 'PostgreSQL', 'Trực quan hóa dữ liệu', 'MongoDB']
 
     return (
         <>

@@ -27,8 +27,9 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center"
     },
     avatar: {
-        width: "8em",
+        width: "11em",
         height: "100%",
+        // height: "auto",
         margin: "0 auto",
     },
     info: {
