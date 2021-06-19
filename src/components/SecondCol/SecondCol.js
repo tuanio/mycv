@@ -51,7 +51,7 @@ export default function SecondCol(props) {
                                 5/2021 - Hiện tại
                             </Typography>
                             <Typography>
-                                Thực tập với vị trí Data Engineer tại Weai
+                                Training với vị trí Data Engineer tại Weai
                             </Typography>
                         </Typography>
 
