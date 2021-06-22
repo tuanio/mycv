@@ -129,7 +129,7 @@ export default function SecondCol(props) {
 
                         <Typography className={classes.infoGeneral}>
                             <Typography className={classes.infoTime}>
-                                1/2021 - 2/2021
+                                6/2021
                             </Typography>
                             <Typography>
                                 <Typography>
