@@ -1,9 +1,8 @@
 // import React, { useState, useEffect } from "react";
 
 // import Grid from "@material-ui/core/Grid";
-import { Paper, Typography } from "@material-ui/core";
+import { Paper, Typography, Link } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles"
-import Button from "@material-ui/core/Button";
 
 import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
 import FitnessCenterOutlinedIcon from '@material-ui/icons/FitnessCenterOutlined';
@@ -110,16 +109,39 @@ export default function SecondCol(props) {
                         <span style={{ marginLeft: 5 }}>Dự án cá nhân</span>
                     </Typography>
                     <Typography className={classes.root}>
+
                         <Typography className={classes.infoGeneral}>
                             <Typography className={classes.infoTime}>
                                 1/2021 - 2/2021
                             </Typography>
                             <Typography>
-                                <b><Button href="http://eng-flask.herokuapp.com/" target="_blank">Engflask</Button></b>
-                                - Trang web học từ vựng Tiếng anh. Các từ sẽ cho người dùng tự thêm vào thành một danh sách. Trang web sẽ đưa từ lên trên cùng sau một khoảng thời gian ngắn. Giúp gợi nhớ lại và học từ vựng tốt hơn.
-                                Các công nghệ sử dụng: Flask, PostgreSQL
+                                <Typography>
+                                    <Link href="http://eng-flask.herokuapp.com" target="_blank" color="primary">
+                                        Engflask
+                                    </Link>
+                                </Typography>
+                                <Typography>                                    
+                                    Trang web học từ vựng Tiếng anh. Các từ sẽ cho người dùng tự thêm vào thành một danh sách. Trang web sẽ đưa từ lên trên cùng sau một khoảng thời gian ngắn. Giúp gợi nhớ lại và học từ vựng tốt hơn.
+                                    Các công nghệ sử dụng: Flask, PostgreSQL
+                                </Typography>
                             </Typography>
-                        </Typography>               
+                        </Typography>
+
+                        <Typography className={classes.infoGeneral}>
+                            <Typography className={classes.infoTime}>
+                                1/2021 - 2/2021
+                            </Typography>
+                            <Typography>
+                                <Typography>
+                                    <Link href="https://catmew.vercel.app" target="_blank" color="primary">
+                                        Cat Tournament
+                                    </Link>
+                                </Typography>
+                                <Typography>
+                                    Trang web chứa đầy mèo, và cũng chỉ toàn mèo. Trang web này có ý tưởng dựa trên Facemash của Mark Zuckerberg. Sẽ đưa hai chú mèo ngẫu nhiên lên cùng một trang và để người dùng vote theo sở thích. Những chú mèo được vote nhiều nhất sẽ được lên trên top của bảng xếp hạng. Trang web với mục đích giải trí là chính.
+                                </Typography>
+                            </Typography>
+                        </Typography>         
 
                     </Typography>
                 </Typography>
