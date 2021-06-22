@@ -138,7 +138,7 @@ export default function SecondCol(props) {
                                     </Link>
                                 </Typography>
                                 <Typography>
-                                    Trang web chứa đầy mèo, và cũng chỉ toàn mèo. Trang web này có ý tưởng dựa trên Facemash của Mark Zuckerberg. Sẽ đưa hai chú mèo ngẫu nhiên lên cùng một trang và để người dùng vote theo sở thích. Những chú mèo được vote nhiều nhất sẽ được lên trên top của bảng xếp hạng. Trang web với mục đích giải trí là chính.
+                                    Trang web chứa đầy mèo, và cũng chỉ toàn mèo. Trang web này có ý tưởng dựa trên Facemash của Mark Zuckerberg. Sẽ đưa hai chú mèo ngẫu nhiên lên cùng một trang và để người dùng vote theo sở thích. Những chú mèo được vote nhiều nhất sẽ được lên trên top của bảng xếp hạng. Trang web với mục đích giải trí là chính. Các công nghệ sử dụng: ReactJS, MaterialUI, Flask, SQLAlchemy.
                                 </Typography>
                             </Typography>
                         </Typography>         
