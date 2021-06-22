@@ -87,7 +87,7 @@ export default function SecondCol(props) {
                                 12/2020
                             </Typography>
                             <Typography>
-                                Giải <u>khuyến khích</u> Olympic Tin học Sinh Viên Việt Nam tại Cần Thơ
+                                Giải <u>khuyến khích</u> khối Chuyên Tin, Olympic Tin học Sinh Viên Việt Nam tại Cần Thơ
                             </Typography>
                         </Typography>
 
